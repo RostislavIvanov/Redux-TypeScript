@@ -1,3 +1,5 @@
+import {store} from "../store/store";
+
 export enum UserActionTypes {
 	FETCH_USERS = 'FETCH_USERS',
 	FETCH_USERS_SUCCESS = 'FETCH_USERS_SUCCESS',
@@ -20,3 +22,4 @@ interface UserFetchErrorAction {
 	payload: string
 }
 export type UserAction = UserFetchAction | UserFetchSuccessAction | UserFetchErrorAction
+
